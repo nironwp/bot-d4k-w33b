@@ -1,0 +1,62 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  engineType = "binary"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+
+enum OrderStatus {
+  COMPLETE
+  PENDING
+}
+
+enum Upssel {
+  INCEST
+  TEEN
+}
+
+model PossibleLead {
+  id Bytes @id @default(auto()) @map("_id") @db.ObjectId
+  chatId Int 
+  bot_sended String
+}
+
+model Order {
+   id Bytes @id @default(auto()) @map("_id") @db.ObjectId
+   status OrderStatus
+   chatId Int @unique
+  txId Int
+  buyerName String?
+  bot_name String
+  bot_token_number Int @default(0)
+  buyerUser String?
+   remarketStage Int @default(0)
+   upssel Upssel?
+
+   createdAt DateTime @default(now()) 
+   updatedAt DateTime @default(now()) 
+}
+
+model Sell {
+  id Bytes @id @default(auto()) @map("_id") @db.ObjectId
+  value Float
+  createdAt DateTime @default(now())
+  bot_name String
+}
+
+model Lead {
+  id Bytes @id @default(auto()) @map("_id") @db.ObjectId
+  chatId Int
+  bot_name String
+  sendedPresent Boolean @default(false)
+
+   createdAt DateTime @default(now()) 
+   updatedAt DateTime @default(now()) 
+}
