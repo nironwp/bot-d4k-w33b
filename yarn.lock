@@ -4817,9 +4817,9 @@ supports-preserve-symlinks-flag@^1.0.0:
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
 telegraf@^4.15.0:
-  version "4.16.2"
-  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-4.16.2.tgz#06ad04fa26c6de6c385f6826cec12477c56ff69c"
-  integrity sha512-d+/XMTBMW8DfQFhYkpyU2f58HMIPygkzClEE03c0LPoEKPGlY9da+9pOVSO7jq9Ar8RRT4OrfwW38sgF/o/x0w==
+  version "4.16.3"
+  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-4.16.3.tgz#f03fa30482b540a7f9895af8f13ec8f432840a66"
+  integrity sha512-yjEu2NwkHlXu0OARWoNhJlIjX09dRktiMQFsM678BAH/PEPVwctzL67+tvXqLCRQQvm3SDtki2saGO9hLlz68w==
   dependencies:
     "@telegraf/types" "^7.1.0"
     abort-controller "^3.0.0"
