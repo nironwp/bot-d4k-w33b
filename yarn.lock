@@ -3441,9 +3441,9 @@ meow@^8.1.2:
     yargs-parser "^20.2.3"
 
 mercadopago@^2.0.3:
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/mercadopago/-/mercadopago-2.0.10.tgz#479dc6f7da929bb6c033b8a44ad9355717ea72f6"
-  integrity sha512-JpreRP8itVrVO0VWUV288Fhx+mK6oItwo6e1vfUlESK7u5CC5dFlcmIGDfIz9/4FvZcav3jiknoPPJ0IDYbwEQ==
+  version "2.0.11"
+  resolved "https://registry.yarnpkg.com/mercadopago/-/mercadopago-2.0.11.tgz#0f475adab3d0e4041153227d731d177a7cd7c04c"
+  integrity sha512-jK/cqjNqBwSrxl1WrQ9UDwoy3BcFuHG3CKKa5EpQhqQyAbfIf2QjIs01Gw65v+94tL4brTrFgb1Ad8PSSCVPRQ==
   dependencies:
     node-fetch "^2.6.12"
     uuid "^9.0.0"
